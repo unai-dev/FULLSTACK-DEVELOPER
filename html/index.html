@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!--DOCTYPE indica el tipo de documento al explorador web-->
+<html> <!-- <html> es la etiqueta raiz de todo documento HTML -->
+<head> <!-- <head> podemos agregar caracteristicas de nuestra pagina web-->
+    <title>Mi primera web</title> <!-- <title> indica el titulo de la pagina web-->
+</head> <!-- </head> cierre de etiqueta head-->
+<body> <!-- <body> podemos agregar contenido de nuestra web-->
+    <ul> <!-- <ul> es lista no ordenada-->
+        <li> Elemento 1</li> <!-- <li> agrega elementos a la lista-->
+        <li> Elemento 2</li>
+        <li> Elemento 3</li>
+        <li> Elemento 4</li>
+        <li> Elemento 5</li>
+    </ul>
+    <ol> <!-- <ul> es lista ordenada-->
+        <li value="50"> Elemento 1</li> <!-- "value" lo que hara es indicar el numero que empezaran los valores-->
+        <li> Elemento 2</li>
+        <li> Elemento 3</li>
+        <li> Elemento 4</li>
+        <li> Elemento 5</li>
+        <li> <!-- añadimos otro elemento que dentro de el crearemos otra lista que se añadira en forma de sublista-->
+            <ol> <!-- lista ordenada-->
+                <li style="list-style-type: lower-roman;"> sub elemento 1</li> 
+                <!--"style" indica el tipo de valor de la lista
+                "lower-alpha" indica el orden en letras
+                "lower-roman" indica el orden en numeros romanos-->
+                <li style="list-style-type: lower-alpha;">sub elemento 2</li>
+                <li style="list-style-type: lower-alpha;">sub elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+
+
+
+      <form action="/formulario" method="GET"> 
+        <!-- <form> indica el inicio de un formulario
+        "action" es la propiedad que nos permite especificar el URL al que se enviaran los datos
+        "method" es la propiedad que define el tipo de metodo que estamos utilizando para enviar los datos
+        "GET" no oculta el URL y los datos se ocultan
+        "POST" se ocultan los datos del URL pero se pueden ver en la consola de google-->
+        <label for="nombre"> Nombre</label> 
+        <!-- <label> define la eqtiqueta del campo, es decir, el texto que explica al usuario que debe escribir
+        "for" lo que hace es unir el id con con el for para tener accesibilidad al clicar fuera del recuadro(es raro de explicar)-->
+        <input value="hello" text" id="nombre" name="nombre" placeholder="Benito..."/>
+        <br>
+        <label for="apellido"> Apellido</label>
+        <input value="unai-dev" type="text" id="apellido" name="apellido" placeholder="Nuka..."/>
+        <br>
+        <label for="comentario">Comentario</label>
+        <!-- <input> campo de entrada
+        "type" indica el tipo de valor del apartado como por ejemplo: type=password
+        "id" identificador unico del campo
+        "name" este name lo que hara es definir el nombre con el que se enviara el dato al servidor
+        "placeholder" es un ejemplo de texto de que lo debe ingresar el usuario en el apartado
+        "value" asigna un valor por defecto al apartado-->
+        <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario" > este es un texto por defecto</textarea>
+        <!-- <textarea> crea un recuadro de texto largo
+        para asignar un valor por defecto en un textarea lo añadimos al final de la etiqueta justo antes de cerrar(<textarea> este es un texto por defecto</textarea>)-->
+        <br>
+        <button type="button"> Boton</button>
+        <button type="reset"> Reset</button>
+        <button type="submit"> Enviar</button>
+        <!-- <button> crea un boton donde podemos añadir mas etiquetas dentro de ella
+        "button" muestra un boton simple sin funcionalidad(la funcionalidad se hace con JS)
+        "reset" reincia a los valores por defecto
+        "sumbit" lo que hace es mostrar un boton para enviar la informacion al servidor-->
+     </form>
+    <h1>Mi primer heading</h1> <!-- <h1> indican titulos en nuestra web-->
+    <h2>Mi segundo heading</h2> <!-- <h2> mas diminuto que h1-->
+    <h3>Mi tercer heading</h3> <!-- <h3> mas diminuto que h2-->
+    <h4>Mi cuarto heading</h4> <!-- <h4> mas diminuto que h3-->
+    <h5> Mi quinto heading</h5> <!-- <h5> mas diminuto que h4-->
+    <h6> Mi sexto heading</h6> <!-- <h6> mas diminuto que h5-->
+    <p>Benito esta feliz y muy feliz</p> <!-- <p> indica un parrafo-->
+    <p> Nuka esta enfadada y muy enfadada</p>
+    <hr> <!-- <hr> separa secciones de la pagina-->
+    <h2> Benito Nuka</h2>
+    <p> Este tipo de texto es <span style ="color:aqua"> mucho mas largo</span> 
+        y es para mostrar <br> <!-- <br> podemos hacer multiples saltos de linea-->
+        la etiqueta de span!
+    </p> 
+    <!-- <span> marca o identifica parte de texto en nuestra web,
+    para ello hay que indicar con "css que veremos mas adelante"-->
+    <a target="_blank" href="https://github.com/unai-dev/FULLSTACK-DEVELOPER/tree/main"> Ir al repo</a> 
+    <!-- <a> esta etiqueta nos sirve para navegar dentro de nuestra web o ir a otras paginas web
+        "href" es la propiedad donde colocaremos el URL al que queremos ir 
+        "target" es la propiedad que nos abrira el URL en una nueva pestaña-->
+    <img src="img/HTML5.png" width="250" height="250"/> 
+    <!-- <img> nos permite añadir imagenes a nuestra web(esta etiqueta se cierra de esta manera <img />)
+     "src" es la propiedad que nos permite añadir la ruta de la imagen
+     "width" es la propiedad que nos permite ajustar el ancho de la imagen
+     "height" es la propiedad que nos permite ajustar el alto de la imagen-->
+</body> <!-- </body> cierre de etiqueta body-->
+</html> <!-- </html> cierre de etiqueta html-->
