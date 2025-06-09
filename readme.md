@@ -52,7 +52,7 @@ Convertirme en un desarrollador Full Stack capaz de construir aplicaciones web c
 
 ---
 
-## 📆 Plan Diario (ejemplo con doble pantalla + iPad)
+## 📆 Plan Diario
 
 - 💻 **Pantalla 1**: VS Code para codificar
 - 🖥️ **Pantalla 2**: Curso Hola Mundo / documentación
