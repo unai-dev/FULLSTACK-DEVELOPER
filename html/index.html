@@ -2,8 +2,43 @@
 <html> <!-- <html> es la etiqueta raiz de todo documento HTML -->
 <head> <!-- <head> podemos agregar caracteristicas de nuestra pagina web-->
     <title>Mi primera web</title> <!-- <title> indica el titulo de la pagina web-->
+    <style>
+        table,th,td {
+            border: 3px solid black;
+        }
+    </style>
+    <!-- <style> es un etiqueta de css la cual da estilo a lo que nosotros digamos
+        "border: 3px solid black;" lo que hace es indicar que quiere añadir un borde a los argumentos table,th,td
+        "3px" lo que indica es el ancho del borde
+        "solid black" indica el color del borde-->
 </head> <!-- </head> cierre de etiqueta head-->
 <body> <!-- <body> podemos agregar contenido de nuestra web-->
+    <table style="width: 500px;"> <!-- <table> podemos agregar una tabla a nuestra web-->
+        <thead> <!-- <thead> podemos agrupar elementos de las cabezeras de nuestras tablas-->
+            <tr> <!-- <tr> fila en nuestra tabla-->
+            <th>Producto</th>
+            <th>Precio</th> <!-- <th> indica que vamos agregar una cabezera-->
+        </tr>
+        </thead>
+        <tbody> <!-- <tbody> agrupa todas las filas que se encuentran en el cuerpo de nuestra tabla -->
+        <tr>
+            <td> Hola Beats</td> <!-- <td> indica que vamos agregar un tipo de dato estandar-->
+            <td> Gratis</td>
+        </tr>
+                <tr>
+            <td> Benito Feliz</td>
+            <td> 19,90€</td>
+        </tr>
+        <tr>
+            <td> Benito feliz muy feliz</td>
+            <td> 29,90€</td>
+        </tr>
+        </tbody>
+        <tfoot> <!-- <tfoot> agrega una fila en el pie de nuestra tabla-->
+            <td></td>
+            <td> Total:49,80€</td>
+        </tfoot>
+    </table>
     <ul> <!-- <ul> es lista no ordenada-->
         <li> Elemento 1</li> <!-- <li> agrega elementos a la lista-->
         <li> Elemento 2</li>
@@ -40,7 +75,7 @@
         <label for="nombre"> Nombre</label> 
         <!-- <label> define la eqtiqueta del campo, es decir, el texto que explica al usuario que debe escribir
         "for" lo que hace es unir el id con con el for para tener accesibilidad al clicar fuera del recuadro(es raro de explicar)-->
-        <input value="hello" text" id="nombre" name="nombre" placeholder="Benito..."/>
+        <input value="hello" type="text" id="nombre" name="nombre" placeholder="Benito..."/>
         <br>
         <label for="apellido"> Apellido</label>
         <input value="unai-dev" type="text" id="apellido" name="apellido" placeholder="Nuka..."/>
@@ -70,7 +105,7 @@
     <h4>Mi cuarto heading</h4> <!-- <h4> mas diminuto que h3-->
     <h5> Mi quinto heading</h5> <!-- <h5> mas diminuto que h4-->
     <h6> Mi sexto heading</h6> <!-- <h6> mas diminuto que h5-->
-    <p>Benito esta feliz y muy feliz</p> <!-- <p> indica un parrafo-->
+    <p>Benito esta feliz y muy feli1z</p> <!-- <p> indica un parrafo-->
     <p> Nuka esta enfadada y muy enfadada</p>
     <hr> <!-- <hr> separa secciones de la pagina-->
     <h2> Benito Nuka</h2>

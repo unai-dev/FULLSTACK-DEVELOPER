@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 id="titulo"> El Blog de Benito</h1> <!-- los id son unicos y se utilizan para identificarlos y interactuar con ellos con css o js-->
+    </header> <!-- <header> -->
+    <div> <!-- <div> hace exactamente lo mismo que <section> lo que hace es contener el contenido
+    se utiliza para dividir nuestro contenido y agruparlo -->
+        <p> soy un parrafo dentro de un div</p>
+    </div>
+    <section> <!-- <section> nos sirve para agregar secciones en nuestra web-->
+        <article class="post"> <!-- <article> podemos definir contenido independiente por ejemplo para poder definir post del blog 
+            el atributo class nos permite que cuando utilizemos css o js podamos utlizar los selectores y podamos identificar los elementos-->
+            <h2> Titulo del post</h2>
+            <p> Descripcion del post</p>
+            <img src="img/benito.JPG" width="200"/>
+            <p> Texto del articulo y es texto de prueba. Benito Gruñon</p>
+        </article>
+        <article class="post"> <!-- <article> podemos definir contenido independiente por ejemplo para poder definir post del blog -->
+            <h2> Titulo del post 2</h2>
+            <p> Descripcion del post 2</p>
+            <img src="img/HTML5.png" width="200"/>
+            <p> Texto del articulo y es texto de prueba. HTML5</p>
+        </article>
+        <article class="post"> <!-- <article> podemos definir contenido independiente por ejemplo para poder definir post del blog -->
+            <h2> Titulo del post 3</h2>
+            <p> Descripcion del post 3</p>
+            <img src="img/firefox.png" width="200"/>
+            <p> Texto del articulo y es texto de prueba. FIREFOX</p>
+        </article>
+    </section>
+    <footer> <!-- <footer> nos sirve para agregar el pie de pagina de nuestra web-->
+        <a href="#titulo">Ir al comienzo</a> <!-- para agregar un enlace de nuestra misma web y el usuario se mueva rapidaemente con un enlace
+        identificamos el id que tenemos asignado con el simbolo #-->
+        <a href="mailto:unaidevcoding@gmail.com">contactame aqui</a> 
+        <p>Copyright by Benito</p>
+        <!-- "mailto:unaidevcoding@gmail.com" creamos un enlace con un mail para enviar correos-->
+    </footer>
+</body>
+</html>
