@@ -1,0 +1,122 @@
+#titulo { /* "#titulo" para selecinar el elemento el cual queremos dar estilo nada mas escribimos su id acompañado de {}*/
+    color: blue; /* la propiedad "color" nos permite elegir el color del elemento que selecionamos(la etiqueta)*/
+}
+
+p.texto { /* "p.texto" con esto le indicamos que le aplique la orden de estila a todas las etiquetas <p> que contengan la clase texto
+    las class se indican con "." pero los id se indican con "#" */
+    color:slateblue
+}
+
+p.especial { /* "p.especial" le indicamos que aplique la orden de estilo a todas las etiquetas <p> que contengan la clase especail
+    ojo!!!! las ultimas parte del codigo css siempre van a tener prioridad por encima de las de arriba
+    esto significa que si decimos que la class "texto especial" sea de color azul pero abajo de esa instruccion
+    le indicamos que todas las etiquetas <p> que contengan la clase especial sean de color verde esta se convierte de color verde
+    por ser la ultima instruccion aplicada*/
+    color: mediumaquamarine
+}
+
+div p { /* este selector indica que en todas las etiquetas de div que contengan hijos de <p> se les aplicara el estilo
+    pero no afectara a las otras etiquetas de <p> solo a las que esten dentro de <div>*/
+    color:bisque
+}
+
+div h2, div h3{ /* en este caso hemos añadido 2 selectores dentro de un solo estilo,
+    para ello como ya vemos los seperamos de una ","*/
+    color:brown
+}
+
+* { /* el "*" nos permite cambiar todo el estilo de todo el documento, su nombre es selector universal 
+    el selector universal solo modificara el estilo a los elementos que no esten asignados por otro selector
+    por eso mismo color no nos permitira modificar absolutamente nada*/
+    font-size: 24px;
+    /* color:black */
+}
+/*
+.color {
+    color: rgb(250, 0, 0) esta manera de identificar colores en css es muy importante, se idenfifican por hexadecimal o rgb como este caso
+}
+*/
+
+.color {
+    /* border: 5px black ridge;con la propiedad "border" podemos añadir un borde a nuestro contenido selecionado 
+    va acompañado del tamaño del borde, el color del borde y el estilo del borde
+    los diferentes estilos de bordes son:
+    dotted
+    dashed
+    solid
+    groove
+    ridge
+    inset
+    outset
+    none
+    hidden */
+    border-style: solid; /* de la siguiente manera añadimos el estilo del borde sin necesidad de añadir el ancho, el color, etc...*/
+    border-color: blue; /* la misma manera, añadimos el estilo del color independientemente de añadir mas elementos */
+    border-radius: 5px; /* con la propiedad "radius" podemos añadir un borde redondado acompañado del radio del borde */
+    border-width: 2rem; /* con la propiedad "width" podemos ajustar el ancho del borde */
+}
+
+#fondo {
+    background-color: rgba(255,0,0); /* la propiedad "background-color" nos indica el color del fondo del elemento selecionado*/
+    /*opacity: 0.3; la propiedad "opacity" nos indica la opacidad del fondo del elemento*/
+    height: 100px;
+    /* background-image: url("benito.JPG"); /* con la propiedad image podemos añadir una imagen de fondo del elemento*/
+    /* background-size: 100px 100px; la propiedad size nos ayuda ajustar el tamaño del fondo */
+    /* background-repeat: repeat-y; /* la propiedad repeat lo que hace es duplicar el fondo de manera horizontal o vertical */
+    /* con "repeat-y" o "repeat-x" pero si queremos evitar que se duplique añadimos "no-repeat"*/
+
+    /* background-position: center bottom; con la propiedad position podemos indicar donde queremos que se encuentre el fondo */
+    background: #f00 url("benito.JPG") repeat-y center bottom / 100px 100px; /* la propiedad de "backrground" sirve para añadir
+    todos los elementos anteriores que hemos visto dentro de 1 sola linea, esto nos ayuda acortar codigo
+    pero al ajustar el tamaño de la imagen lo debemos hacer al final de la linea y con una "/" antes de escribir las dimensiones */
+}
+
+.margen {
+    background-color: chocolate;
+    margin: 15px;
+    padding: 30px 15px 5px;
+    /* margin: 15px 20px 25px 30px; margin nos permite separar el elemento de el exterior
+    el orden en el que se indican los valores son: arriba/derecha/abajo/izquierda
+    padding: 30px 25px 20px 15px; /* padding nos permite separar el elemento del interior*/
+    border: solid 3px black; /* border añade un borde entre el padding y el margin*/
+    height: 100px; /* altura del contenido*/
+    width: 50px; /* ancho del contenido*/
+    overflow: scroll; /* la propieda overflow cambia la visibilidad del texto 
+    scroll crea un deslizador para deslizar y poder ver el contenido completo*/
+    /*box model es como se posiciona cada elemento HTMl en nuestro documento y cada etiqueta tendra
+    un margen, un borde, un padding y el contenido*/
+    outline: 1px solid red; /* la propiedad outline añade un borde fuera del borde pero antes del margen*/
+}
+
+.text {
+    font-family: 'Savate', sans-serif; /* la propiedad font-family cambia la fuente del texto
+    para añadir una fuente custom añadimos 'nombre_fuente' junto con el enlace de google font en el doc HTML*/
+    text-align: center; /* la propiedad text-align nos sirve para dejar el texto en la poscion que guste */
+    text-decoration: overline;
+    text-shadow: 3px 5px 5px blue;
+}
+
+a:link { /* modifica el color del link*/
+    color: blueviolet;
+}
+
+a:visited { /* cuando abres el enlace y vuelves el link se ve del color que asignamos*/
+    color: grey;
+}
+
+a:hover { /* cuando pasas el mouse por encima del link se ve el color que asignamos*/
+    color: yellow;
+}
+
+a:active { /* cuando presionas el link o el link esta activo se ve el color que asignamos*/
+    color: red;
+}
+
+ul {
+    background-color: aqua ;
+    list-style-type: georgian; /* modificamos el tipo de numeracion de las listas, por ejemplo
+    no queremos que sakgan 1,2,3 y queremos que salgan circulos pues añadimos la propiedad list-style.type:circle*/
+    /* padding-left:modifica el padding de la tabla */
+    /* list-style-position: inside; lo que hara esta propiedad es mover los puntos o numeros o tipo de numeracion a los elementos de la tabla
+    junto con el texto */
+}
