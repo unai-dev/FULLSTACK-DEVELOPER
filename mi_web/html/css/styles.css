@@ -1,0 +1,101 @@
+
+/* COLORES */
+
+:root {
+  --color-fondo: #0f0f0f;          /* Fondo principal oscuro */
+  --color-seccion: #1f1f1f;        /* Secciones como header/footer */
+  --color-texto: #f0f0f0;          /* Texto principal claro */
+  --color-secundario: #b0b0b0;     /* Texto secundario o descripciones */
+  --color-principal: #00bcd4;      /* Azul cian – enlaces, botones */
+  --color-hover: #0ef6cc;          /* Verde cian – hover o resaltado */
+  --color-acento: #ff3c57;         /* Rojo – botones de alerta o error */
+  --color-premium: #7c4dff;        /* Morado – detalles premium */
+  --color-borde: #2e2e2e;          /* Bordes sutiles */
+}
+
+/* HEADER */
+header {
+  color: var(--color-texto);
+  text-align: center;
+  padding:20px 40px ;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 24px;
+  font-size: 16px;
+}
+/* BOTONES*/
+.boton {
+  background-color: var(--color-principal);
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 4px 4px 0 white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family:"Share Tech";
+}
+
+.boton a {
+  text-decoration: none;
+}
+
+.boton:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--color-hover);
+}
+/* BODY*/
+body {
+  background-color: var(--color-fondo);
+  font-family: "Inter";
+}
+
+body section h2 {
+    color: var(--color-texto);
+}
+body section h3 {
+    color: var(--color-texto);
+}
+body section h4 {
+    color: var(--color-texto);
+}
+
+body p {
+  color: var(--color-secundario);
+}
+
+/* IMAGENES*/
+.foto_me {
+  max-width: 400px;
+  width: 90%;
+}
+.logo {
+  max-width: 400px;
+  width: 90%;
+}
+/* FOOT */
+footer {
+  background-color: var(--color-seccion);
+  color: var(--color-texto);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+/* ENLACES */
+
+a:hover {
+  color: var(--color-hover);
+}
+/* NEGRITAS */
+strong {
+  color: var(--color-premium);
+}
+
+/* FORM */

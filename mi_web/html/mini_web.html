@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Savate:ital,wght@0,200..900;1,200..900&family=Share+Tech&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Savate:ital,wght@0,200..900;1,200..900&family=Share+Tech&display=swap" rel="stylesheet">
+    <title>unaidevpro</title>
+</head>
+<body>
+    <header id="inicio">
+    <nav class="nav">
+        <button class="boton">
+            <a href="#me">Sobre mi</a>
+        </button>
+        <button class="boton">
+            <a href="#cursos">Cursos</a>
+        </button>
+        <button class="boton">
+            <a href="#planes">Planes</a>
+        </button>
+        <button class="boton">
+            <a href="#valor">Valorame</a>
+        </button>
+    </nav>
+        <h1>unaidevpro</h1>
+        <p>Hola me llamo Unai, y esta es mi pagina de prueba de HTML.</p>
+    </header>
+    <hr>
+    <hr>
+    <main>
+        <section id="me" class="section">
+            <h2>Sobre Mi</h2>
+            <div class="me">
+                <img src="img/unai.png" alt="Foto de Unai" class="foto_me"/>
+                <div>
+                    <p>
+                        Hola Me llamo <strong>Unai Villar</strong> y estoy dando mis primeros pasos en el mundo del desarrollo <strong>Full Stack</strong>.
+                        He creado esta web para que la gente vea mi proceso, esta estructura es una <strong>web basica</strong> basica que trata sobre una academia del mundo del <strong>desarrollo</strong>.
+                    </p>
+                    <p>
+                        Aqui podras encontrar diferentes <strong>cursos y ayudas</strong>para tu avance en el mundo del desarrollo.
+                    </p>
+                    <p>
+                        La principal idea es dar un enfoque al curso <strong>Full Stack</strong> donde os voy a enseñar mi paso por este trayecto y poderos mostrar todo mi aprendizaje.
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </section>
+        <section id="cursos" class="section">
+            <h2>Cursos</h2>
+            <div class="cursos">
+                <p>
+                    A continuacion se mostraran los siguientes cursos que ofrezco en mi academia <strong>unaidevpro</strong>.
+                </p>
+                <div>
+                    <img src="img/HTML5.png" alt="Foto logo HTML5" class="logo"/>
+                    <h3>
+                        Curso HTML5
+                    </h3>
+                    <p>
+                        En este curso de HTML5, vais <strong>aprender</strong> a <strong>gestionar</strong> y <strong>estructurar</strong> una web.
+                    </p>
+                    <p>
+                        Como bien ya sabemos HTML es el lenguaje de marcado estandar que le da <strong>forma</strong> a una pagina.
+                    </p>
+                    <img src="img/CSS3.png" alt="Foto logo CSS3" class="logo"/>
+                    <h3>
+                        Curso CSS3
+                    </h3>
+                    <p>
+                        En este curso de CSS3, vais <strong>aprender</strong> a aplicar<strong>estilo</strong> y darle<strong>forma</strong> a una web.
+                    </p>
+                    <p>
+                        CSS es el lenguaje que le dara estilo y una estructura a nuestra web.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="planes" class="section">
+            <h2>Planes</h2>
+            <p>
+                A continuacion se mostraran los diferentes precios y planes que ofrezco en mi academia unaidevpro.
+            </p>
+            <div class="planes_container">
+                <div class="plan_mensual">
+                <h3>
+                    Plan Mensual
+                </h3>
+                <p class="precio">12.90€/mes</p>
+                <ul>
+                    <li>Acceso a todos los cursos.</li>
+                    <li>Acceso a la comunidad unaidevpro.</li>
+                    <li>Soporte 24/7h.</li>
+                    <li>Correcion de proyectos.</li>
+                </ul>
+                <button class="boton">Elegir plan</button>
+                </div>
+                <div class="plan_anual">
+                <h3>
+                    Plan Anual
+                </h3>
+                <p class="precio">74.90€/año</p>
+                <ul>
+                    <li>Todo lo del plan mensual.</li>
+                    <li>5 proyectos en vivo.</li>
+                    <li>1 sesion mensual en directo.</li>
+                </ul>
+                <button class="boton">Elegir plan</button>
+                </div>
+            <div class="plan_premium">
+                <h3>Plan Premium</h3>
+                <p class="precio">€149,99 / año</p>
+                <ul>
+                    <li>Todo lo anterior</li>
+                    <li>Soporte personalizado</li>
+                    <li>Acceso a comunidad privada</li>
+                </ul>
+                <button class="boton">Elegir plan</button>
+            </div>
+            <div class="plan_individual">
+                <h3>Curso individual</h3>
+                <p class="precio">9.90€/unico</p>
+                <ul>
+                    <li>Acceso de por vida al curso.</li>
+                    <li>Soporte por email.</li>
+                </ul>
+                <button class="boton">Elegir curso</button>
+            </div>
+            </div>
+        </section>
+        <section id="valor" class="form">
+            <h2>Valorame</h2>
+            <form class="formulario" action="/enviar_valoracion" method="GET">
+                <div class="form">
+                    <label for="name">Nombre</label>
+                    <input id="name" name="Nombre" type="text" placeholder="Introduce tu nombre"/>
+                </div>
+                <div>
+                    <label for="apellido">Apellido</label>
+                    <input id="apellido" name="Apellido" type="text" placeholder="Introduce tu apellido"/>
+                </div>
+                <div class="estrellas">
+                    <input id="1" type="radio" name="valoracion" value="1"/>
+                    <label for="1">★</label>
+                    <input id="2" type="radio" name="valoracion" value="2"/>
+                    <label for="2">★</label>
+                    <input id="3" type="radio" name="valoracion" value="3"/>
+                    <label for="3">★</label>
+                    <input id="4" type="radio" name="valoracion" value="4"/>
+                    <label for="4">★</label>
+                    <input id="5" type="radio" name="valoracion" value="5"/>
+                    <label for="5">★</label>
+                </div>
+                <button class="boton" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Copyright by unaidevpro 2025
+        </p>
+        <div class="enlaces">
+            <a href="#inicio">Volver a inicio</a>
+        </div>
+    </footer>
+</body>
+</html>
