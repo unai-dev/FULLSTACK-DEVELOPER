@@ -1,0 +1,71 @@
+body { /* le añadimos color al fondo de la web*/
+    margin: 0;
+    background-color: blanchedalmond;
+}
+
+header {
+    font-family: 'Roboto';
+    background-color: darkcyan;
+    color: white;
+    padding: 3rem 2rem;
+}
+
+header h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.container{
+    font-family:"Roboto";
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+section article {
+    transition: all 0.3s ease;
+    background-color: #fff;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    cursor: pointer;
+}
+
+section article:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,1);
+}
+
+
+section article h2, section article p {
+    margin: 1rem;
+}
+
+footer {
+    background-color: #222;
+    padding: 3rem;
+    color: white;
+    display: flex;             /* Convierte el pie de página en un contenedor flex */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    align-items: center;       /* Centra verticalmente los elementos dentro del pie de página */
+}
+
+footer p {
+    margin: 0;
+}
+footer a {
+    transition: color 0.2s ease;
+    color: white;
+    text-decoration: none;
+
+}
+
+footer a:hover {
+    color: cornflowerblue;
+}
+
+section article img {
+    max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor (el artículo) */
+    height: auto;    /* Mantiene la proporción original de la imagen para evitar que se vea estirada */
+    display: block;  /* Opcional: Elimina cualquier espacio extra que algunos navegadores añaden a las imágenes */
+}

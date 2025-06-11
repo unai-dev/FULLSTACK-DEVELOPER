@@ -106,6 +106,7 @@ a:visited { /* cuando abres el enlace y vuelves el link se ve del color que asig
 
 a:hover { /* cuando pasas el mouse por encima del link se ve el color que asignamos*/
     color: yellow;
+    cursor: pointer;
 }
 
 a:active { /* cuando presionas el link o el link esta activo se ve el color que asignamos*/
@@ -120,3 +121,89 @@ ul {
     /* list-style-position: inside; lo que hara esta propiedad es mover los puntos o numeros o tipo de numeracion a los elementos de la tabla
     junto con el texto */
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* la propiedad de border-collapse nos permite quitar espacions en la tabla*/
+}
+
+th, td { /* para darle estilos a las cabezeras y columnas de nuestras tablas selecionamos th, td*/
+    border: solid 1px black;
+    padding: 5px; /* padding es la separacion interior del texto y los bordes*/
+}
+
+th { /* selecionamos las cabezeras de la tabla*/
+    background-color: tomato;
+    color: white;
+    text-align: left; /* movemos la poscion del texto*/
+}
+
+
+tr:nth-child(even) { /* el selector "nth-child(even)" nos permite selecionar todas las filas (<tr>) de una tabla que son pares.*/
+    background-color: #eee;
+}
+tr:nth-child(odd) { /*el selector "nth-child(odd)" nos permite selecionar todas las filas (<tr>) de una tabla que son inpares.*/
+    background-color: violet;
+}
+tr:hover { /* hover lo que hace es que cuando pasamos el cursor por encima de la tabla se ponga del color que asignamos */
+    background-color: #aaa;
+    cursor: pointer; /* la propiedad de cursor-pointer nos permite modficar la forma del cursor cuando estamos encima de el elemento */
+}
+
+span { /* las etiquetas <span> vienen por defecto que juntar todos los elementos en una misma linea*/
+    display: block; /* la propiedad "display" nos permite modifcar el formato en el que se van a ver los elementos
+    "block" nos permite separar los elementos por filas*/
+    /* display: none; /*los elementos desaparecen*/
+    /* visibility: hidden;  los elementos desaparecen*/ 
+    max-width: 300px; /* max-width nos permite adaptar el tamaño a nuestro navegador*/
+    background-color: #f00;
+
+}
+
+.inline { /* al contrario de la etiqueta <span> las etiquetas <div> ya vienen por defecto separadas por lienas
+    pero si queremos juntar todos los elementos en una linea añadimos la funcion "inline"*/
+    display: inline;
+}
+
+#posicion { /*ajustamos la poscion de nuestro <article>*/
+    position: fixed; /* la propiedad "position" nos permite modificar el tipo de poscion que va a tener un elemento en nuestra pagina
+    "fixed" fija el elemento en la pagina basicamente cuando nosotros hacemos scroll el elemento va a bajar con nosotros sin renunciar la poscion tomada
+    entre ellos hay muchos mas como en el caso de "sticky" "absolute" etc...*/
+    left: 20px;
+}
+
+.left {
+    float: left; /* la propiedad de "float" lo que nos permite es hacer flotar a un elemento al lado que asignamos
+    esto va muy bien si queremos fijar una imagen y al lado de la imagen texto*/
+    width: 200px;
+    height: 200px;
+}
+
+.right {
+    float: right; 
+}
+
+.container {
+    height: 200px;
+}
+
+.column{
+    margin: 0;
+    padding: 10px 0;
+    width: 33.3%;
+}
+
+.inline-block {
+    display: inline-block; /* la funcion inline-block nos permite y se utiliza mucho para hacer menus de navegacion los cual estos tengan
+    los links de izq a derecha o derecha a izq para que los link se vean uniforme */
+    height: 55px;
+    background-color: red;
+}
+
+.center {
+    padding: 50px 0;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+} /*de esta manera podemos centrar un elemento en nuestra web, y tambien su texo*/
